@@ -6,7 +6,7 @@
             "email": "magnit56@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
     "bin": [
       "bin/brain-games"
     ]
