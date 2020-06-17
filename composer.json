@@ -1,0 +1,13 @@
+{
+    "name": "magnit56/php-project-lvl1",
+    "authors": [
+        {
+            "name": "Samat Tulegenov",
+            "email": "magnit56@gmail.com"
+        }
+    ],
+    "require": {}
+    "bin": [
+      "bin/brain-games"
+    ]
+}
