@@ -14,7 +14,7 @@
     ],
     "autoload": {
 	"files": [
-	    "src/brain-even.php"
+	    "src/run.php"
 	]
     },
     "require-dev": {
