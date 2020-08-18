@@ -14,7 +14,7 @@ function run($getData, $gameTask)
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     for ($roundsCount = 0; $roundsCount < ROUNDS_COUNT; $roundsCount++) {
-        $data = $getData;
+        $data = $getData();
         $question = $data['question'];
         $correctAnswer = $data['correctAnswer'];
         line("Question: %s", $question);
@@ -26,6 +26,6 @@ function run($getData, $gameTask)
             line("Let's try again, %s!", $name);
             exit;
         }
-        line("Congratulations, %s!", $name);
     }
+    line("Congratulations, %s!", $name);
 }
