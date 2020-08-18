@@ -14,7 +14,8 @@
     ],
     "autoload": {
 	"files": [
-	    "src/run.php"
+	    "src/run.php",
+        "src/games/even.php"
 	]
     },
     "require-dev": {
