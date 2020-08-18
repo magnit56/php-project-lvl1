@@ -2,8 +2,7 @@
 
 namespace BrainGames\Games\Even;
 
-use function cli\line;
-use function cli\prompt;
+use function BrainGames\Run\run;
 
 function isEven($number)
 {
@@ -17,8 +16,7 @@ function isEven($number)
 
 function runEven()
 {
-    $getData = function ()
-    {
+    $getData = function () {
         $question = rand(1, 99);
         $correctAnswer = isEven($question);
         $data = [];
