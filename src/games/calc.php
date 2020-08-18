@@ -18,7 +18,7 @@ function calc($num1, $num2, $operation)
 
 function runCalc()
 {
-    $getData =function () {
+    $getData = function () {
         $operations = ['*', '+', '-'];
         $num1 = rand(1, 99);
         $num2 = rand(1, 99);
@@ -33,4 +33,3 @@ function runCalc()
     $gameTask = 'What is the result of the expression?';
     run($getData, $gameTask);
 }
-
