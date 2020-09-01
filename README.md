@@ -9,12 +9,12 @@ Status of Last Deployment:<br>
 -install game: <code>composer global require magnit56/php-project-lvl1</code>
 <h1>How to play? Examples</h1>
 <h2>Even</h2>
-<img src="/magnit56/php-project-lvl1/blob/master/examples/brain-even.gif?raw=true" alt="brain-even.gif">
+<img src="https://raw.githubusercontent.com/magnit56/php-project-lvl1/master/examples/brain-even.gif" />
 <h2>Calc</h2>
-<img src="https://github.com/magnit56/php-project-lvl1/tree/master/examples/brain-calc.gif" alt="brain-calc">
+<img src="https://raw.githubusercontent.com/magnit56/php-project-lvl1/master/examples/brain-calc.gif" />
 <h2>Gcd</h2>
-<img src="https://github.com/magnit56/php-project-lvl1/tree/master/examples/brain-gcd.gif" alt="brain-gcd">
+<img src="https://raw.githubusercontent.com/magnit56/php-project-lvl1/master/examples/brain-gcd.gif" />
 <h2>Progression</h2>
-<img src="https://github.com/magnit56/php-project-lvl1/tree/master/examples/brain-progression.gif" alt="brain-progression">
+<img src="https://raw.githubusercontent.com/magnit56/php-project-lvl1/master/examples/brain-progression.gif" />
 <h2>Prime</h2>
-<img src="https://github.com/magnit56/php-project-lvl1/tree/master/examples/brain-prime.gif" alt="brain-prime">
+<img src="https://raw.githubusercontent.com/magnit56/php-project-lvl1/master/examples/brain-prime.gif" />
