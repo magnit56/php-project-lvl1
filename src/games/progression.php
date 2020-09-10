@@ -21,9 +21,9 @@ function runProgression()
         $firstItem = rand(1, 9);
         $step = rand(1, 10);
         $items = getRandProgression($firstItem, $step);
-        $riddle = rand(1, 9);
-        $correctAnswer = $items[$riddle];
-        $items[$riddle] = '..';
+        $riddleIndex = rand(1, 9);
+        $correctAnswer = $items[$riddleIndex];
+        $items[$riddleIndex] = '..';
         $question = implode(' ', $items);
         $data['question'] = $question;
         $data['correctAnswer'] = (string) $correctAnswer;
