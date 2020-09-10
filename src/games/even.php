@@ -18,7 +18,7 @@ function runEven()
 {
     $getData = function () {
         $question = rand(1, 99);
-        $correctAnswer = isEven($question);
+        $correctAnswer = (string) isEven($question);
         $data = [];
         $data['question'] = $question;
         $data['correctAnswer'] = $correctAnswer;

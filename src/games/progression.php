@@ -14,7 +14,7 @@ function runProgression()
             $items[$i] = $firstItem + $i * $step;
         }
         $riddle = rand(1, 10);
-        $correctAnswer = $items[$riddle];
+        $correctAnswer = (string) ($items[$riddle]);
         $items[$riddle] = '..';
         $question = implode(' ', $items);
         $data['question'] = $question;

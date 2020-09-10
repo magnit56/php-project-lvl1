@@ -18,7 +18,7 @@ function runPrime()
 {
     $getData = function () {
         $question = rand(1, 99);
-        $correctAnswer = isPrime($question);
+        $correctAnswer = (string) isPrime($question);
         $data = [];
         $data['question'] = $question;
         $data['correctAnswer'] = $correctAnswer;

@@ -24,7 +24,7 @@ function runCalc()
         $num2 = rand(1, 99);
         $operation = $operations[array_rand($operations)];
         $question = "$num1 $operation $num2";
-        $correctAnswer = calc($num1, $num2, $operation);
+        $correctAnswer = (string) calc($num1, $num2, $operation);
         $data = [];
         $data['question'] = $question;
         $data['correctAnswer'] = $correctAnswer;

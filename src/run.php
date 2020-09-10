@@ -19,7 +19,7 @@ function run($getData, $gameTask)
         $correctAnswer = $data['correctAnswer'];
         line("Question: %s", $question);
         $userAnswer = prompt("Your answer");
-        if ($userAnswer == $correctAnswer) {
+        if ($userAnswer === $correctAnswer) {
             line("Correct!");
         } else {
             line("'%s' is wrong answer ;(. Correct answer was '%s'.", $userAnswer, $correctAnswer);
