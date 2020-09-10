@@ -4,10 +4,16 @@ namespace BrainGames\Games\Gcd;
 
 use function BrainGames\Run\run;
 
-function gcd($num1, $num2)
+function gcd($a , $b)
 {
-    $gcd = gmp_gcd($num1, $num2);
-    return $gcd;
+    while ($a != $b) {
+        if ($a > $b) {
+            $a -= $b;
+        } else {
+            $b -= $a;
+        }
+    }
+    return $a;
 }
 
 function runGcd()
