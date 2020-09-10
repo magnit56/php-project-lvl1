@@ -2,6 +2,9 @@
 
 name: CI
 
+
+
+
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
@@ -20,6 +23,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
 
+    - name: Setup PHP with composer v2
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '7.4'
+        tools: composer:v2
+
+
     - name: Git clone my repository
       uses: actions/checkout@v1
 
@@ -29,3 +39,5 @@ jobs:
         ls -la
         make install
         make lint
+        php --version
+        composer --version
