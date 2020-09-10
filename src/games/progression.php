@@ -6,25 +6,25 @@ use function BrainGames\Run\run;
 
 const PROGRESSION_LENGTH = 10;
 
-function getRandProgression($firstItem, $step)
+function getRandProgression($firstElem, $step)
 {
-    $items = [];
+    $progression = [];
     for ($i = 0; $i < PROGRESSION_LENGTH; $i++) {
-        $items[$i] = $firstItem + $i * $step;
+        $progression[$i] = $firstElem + $i * $step;
     }
-    return $items;
+    return $progression;
 }
 
 function runProgression()
 {
     $getData = function () {
-        $firstItem = rand(1, 9);
+        $firstElem = rand(1, 9);
         $step = rand(1, 10);
-        $items = getRandProgression($firstItem, $step);
+        $progression = getRandProgression($firstElem, $step);
         $riddleIndex = rand(1, 9);
-        $correctAnswer = $items[$riddleIndex];
-        $items[$riddleIndex] = '..';
-        $question = implode(' ', $items);
+        $correctAnswer = $progression[$riddleIndex];
+        $progression[$riddleIndex] = '..';
+        $question = implode(' ', $progression);
         $data['question'] = $question;
         $data['correctAnswer'] = (string) $correctAnswer;
         return $data;
