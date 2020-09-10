@@ -6,19 +6,19 @@ use function BrainGames\Run\run;
 
 function isPrime($number)
 {
-    if (gmp_prob_prime($number) == 0) {
-        return 'no';
+    for ($i = 2; $i < $number; $i++) {
+        if ($number % $i === 0) {
+            return false;
+        }
     }
-    if (gmp_prob_prime($number) == 2) {
-        return 'yes';
-    }
+    return true;
 }
 
 function runPrime()
 {
     $getData = function () {
         $question = rand(1, 99);
-        $correctAnswer = (string) isPrime($question);
+        $correctAnswer = isPrime($question) ? "yes" : "no";
         $data = [];
         $data['question'] = $question;
         $data['correctAnswer'] = $correctAnswer;
