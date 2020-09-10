@@ -15,6 +15,8 @@ function calc($num1, $num2, $operation)
             return $num1 + $num2;
         case '-':
             return $num1 - $num2;
+        default:
+            throw new Error("it cannot be calculated");
     }
 }
 
