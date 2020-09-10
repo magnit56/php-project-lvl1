@@ -4,7 +4,7 @@ namespace BrainGames\Games\Gcd;
 
 use function BrainGames\Run\run;
 
-function gcd($a , $b)
+function gcd($a, $b)
 {
     while ($a != $b) {
         if ($a > $b) {
