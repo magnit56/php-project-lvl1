@@ -6,19 +6,14 @@ use function BrainGames\Run\run;
 
 function isEven($number)
 {
-    if ($number % 2 === 0) {
-        return 'yes';
-    }
-    if ($number % 2 !== 0) {
-        return  'no';
-    }
+    return $number % 2 === 0;
 }
 
 function runEven()
 {
     $getData = function () {
         $question = rand(1, 99);
-        $correctAnswer = (string) isEven($question);
+        $correctAnswer = isEven($question) ? "yes" : "no";
         $data = [];
         $data['question'] = $question;
         $data['correctAnswer'] = $correctAnswer;
