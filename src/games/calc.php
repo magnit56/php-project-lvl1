@@ -4,6 +4,8 @@ namespace BrainGames\Games\Calc;
 
 use function BrainGames\Run\run;
 
+const OPERATIONS = ['*', '+', '-'];
+
 function calc($num1, $num2, $operation)
 {
     switch ($operation) {
@@ -19,10 +21,9 @@ function calc($num1, $num2, $operation)
 function runCalc()
 {
     $getData = function () {
-        $operations = ['*', '+', '-'];
         $num1 = rand(1, 99);
         $num2 = rand(1, 99);
-        $operation = $operations[array_rand($operations)];
+        $operation = OPERATIONS[array_rand(OPERATIONS)];
         $question = "$num1 $operation $num2";
         $correctAnswer = (string) calc($num1, $num2, $operation);
         $data = [];
